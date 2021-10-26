@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Meal type:</strong>
+  <%= @entry2.meal_type %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @entry2.calories %>
+</p>
+
+<p>
+  <strong>Proteins:</strong>
+  <%= @entry2.proteins %>
+</p>
+
+<p>
+  <strong>Carbs:</strong>
+  <%= @entry2.carbs %>
+</p>
+
+<p>
+  <strong>Fats:</strong>
+  <%= @entry2.fats %>
+</p>
+
+<%= link_to 'Edit', edit_entry2_path(@entry2) %> |
+<%= link_to 'Back', entry2s_path %>

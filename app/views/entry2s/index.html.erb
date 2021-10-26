@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entry2s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meal type</th>
+      <th>Calories</th>
+      <th>Proteins</th>
+      <th>Carbs</th>
+      <th>Fats</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entry2s.each do |entry2| %>
+      <tr>
+        <td><%= entry2.meal_type %></td>
+        <td><%= entry2.calories %></td>
+        <td><%= entry2.proteins %></td>
+        <td><%= entry2.carbs %></td>
+        <td><%= entry2.fats %></td>
+        <td><%= link_to 'Show', entry2 %></td>
+        <td><%= link_to 'Edit', edit_entry2_path(entry2) %></td>
+        <td><%= link_to 'Destroy', entry2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry2', new_entry2_path %>
